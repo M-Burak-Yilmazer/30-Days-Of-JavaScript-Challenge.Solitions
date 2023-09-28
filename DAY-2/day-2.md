@@ -4,7 +4,7 @@
   </div>
 
 
-`console.log("=============Exercise Level 1=================");
+`console.log("=============Exercise Level 1=================")`;
 let challenge = "30 Days of JavaScript";
 console.log(challenge);
 console.log(challenge.length);
