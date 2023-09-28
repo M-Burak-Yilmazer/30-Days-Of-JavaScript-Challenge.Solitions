@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./img/banner.png" alt="JavaScript for Everyone" width="180">
+  <img src="./img/banner.webp" alt="JavaScript for Everyone" width="250">
 
   <h2 align="center">30 Days Of JavaScript Solutions</h2>
   <p align="center">
