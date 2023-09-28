@@ -11,9 +11,10 @@
   <p>A step by step guide to master JavaScript with bit-sized learning exercises</p>
 </div>
 
-#### 🛈 NOTE : 
+#### 🛈 NOTE :  
 - Welcome to my repository where I will be sharing my solutions to the exercise challenges at the end of each day's learning.
-- 
+
+ 
 
 ## 🏆 MY JOURNEY
 
