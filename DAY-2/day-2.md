@@ -5,11 +5,11 @@
 
 
 `console.log("=============Exercise Level 1=================")`;
-let challenge = "30 Days of JavaScript";
-console.log(challenge);
+`let challenge = "30 Days of JavaScript";`
+`console.log(challenge);
 console.log(challenge.length);
 let upper = challenge.toUpperCase();
-console.log(upper);
+console.log(upper);`
 let down = challenge.toLowerCase();
 console.log(down);
 console.log(challenge.substring(0, 2));
