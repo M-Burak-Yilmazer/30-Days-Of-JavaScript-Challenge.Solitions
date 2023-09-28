@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./images/banner.webp" alt="JavaScript for Everyone" width="180">
+  <img src="https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/images/day_1_1.png" alt="JavaScript for Everyone" width="180">
 
   <h2 align="center">30 Days Of JavaScript Solutions</h2>
   <p align="center">
