@@ -20,7 +20,7 @@
 
 |  | DAY |  TOPICS  | SOLUTION |
 | :---: | :---: | :------------------------------------------------------------------------------------------------------------------------------------------------- | :---: |
-| ☑️  | 01   |   [Introduction](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/readMe.md)                                                                   | [🎯 Day-1]() |
+| ☑️  | 01   |   [Introduction](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/readMe.md)                                                                   | [🎯 Day-1](https://github.com/M-Burak-Yilmazer/30-Days-Of-JavaScript-Challenge.Solitions/blob/master/DAY-1/day_1_solutions.js) |
 | ☑️  | 02    |   [Data Types](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/02_Day_Data_types/02_day_data_types.md)                                        | [🎯 Day-2](https://github.com/M-Burak-Yilmazer/30-Days-Of-JavaScript-Challenge.Solitions/blob/master/DAY-2/day_2_solutions.js) |
 | ☑️  | 03    |   [Booleans, Operators, Date](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/03_Day_Booleans_operators_date/03_booleans_operators_date.md)   | [🎯 Day-3]() |
 | ☑️  | 04    |   [Conditionals](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/04_Day_Conditionals/04_day_conditionals.md)                                  | [🎯 Day-4]() |
