@@ -4,12 +4,12 @@
   </div>
 
 
-`console.log("=============Exercise Level 1=================")`;
-`let challenge = "30 Days of JavaScript";`
-`console.log(challenge);
+`console.log("=============Exercise Level 1=================");
+let challenge = "30 Days of JavaScript";
+console.log(challenge);
 console.log(challenge.length);
 let upper = challenge.toUpperCase();
-console.log(upper);`
+console.log(upper);
 let down = challenge.toLowerCase();
 console.log(down);
 console.log(challenge.substring(0, 2));
@@ -94,4 +94,6 @@ let income =
 let money = income.match(/\d+/g);
 console.log(money);
 let annualMoney = +(12 _ money[0]) + +money[1] + Number(12 _ money[2]);
-console.log(annualMoney);`
+console.log(annualMoney);
+
+`
