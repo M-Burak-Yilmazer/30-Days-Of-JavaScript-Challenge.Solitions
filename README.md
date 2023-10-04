@@ -57,7 +57,7 @@
 
 <div align=center>
 
-  <a href="linkedin.com/in/muhittin-burak-yilmazer-9a576b1aa" target="_blank">
+  <a href="https://linkedin.com/in/muhittin-burak-yilmazer-9a576b1aa" target="_blank">
     <img src="https://img.shields.io/badge/linkedin%20Profile-%2300acee.svg?color=405DE6&style=for-the-badge&logo=linkedin&logoColor=white" alt=Linkedin>
   </a>&nbsp;&nbsp;&nbsp;
 
