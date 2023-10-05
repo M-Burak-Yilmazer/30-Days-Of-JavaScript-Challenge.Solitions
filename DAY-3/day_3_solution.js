@@ -117,7 +117,6 @@ console.log(m);
 
 //?Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
 
-
 // let work_hours = +prompt("enter the hours ")
 // let rate_per_hour = +prompt("enter rate per hour")
 // let weekly_income =  work_hours * rate_per_hour
@@ -128,7 +127,75 @@ console.log(m);
 // let yourName = prompt("enter your first name");
 // if (yourName.length >7){console.log("your name is long")}else { "your name is short"}
 
-
-
 // todo Compare your first name length and your family name length and you should get this output.
+
+let first_Name = "Mathias";
+let last_Name = "Burger";
+if (first_Name.length > last_Name.length) {
+  console.log(
+    `Your First name, ${first_Name} is longer than your family name, ${last_Name}.`
+  );
+} else {
+  console.log(
+    `Your First name, ${first_Name} is closer than your family name, ${last_Name}.`
+  );
+}
+
+// * Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
+let my_Age = 125;
+let yourAge = 35;
+
+// ?? Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+
+// let birth_year = +prompt("Enter your birth year:", "Birth Year");
+// let your_Age = new Date().getFullYear() - birth_year;
+// if (your_Age >= 18) {
+//   console.log(`You are ${your_Age}. You are old enough to drive`);
+// } else {
+//   console.log(
+//     `You are ${your_Age}. You will be allowed to drive after ${
+//       18 - your_Age
+//     } years.`
+//   );
+// }
+
+// todo Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+
+// let lived_year = +prompt("enter your lived years");
+// console.log(`You lived ${lived_year * 365 * 24 * 60 * 60} seconds. `);
+let years = new Date().getFullYear();
+let months = new Date().getMonth() + 1;
+let days = new Date().getDate();
+let hours = new Date().getHours();
+let minutes = new Date().getMinutes();
+
+console.log(`${years}-${months}-${days} ${hours}:${minutes}`);
+console.log(`${days}-${months}-${years} ${hours}:${minutes}`);
+console.log(`${days}/${months}/${years} ${hours}:${minutes}`);
+
+///todo   Exercises: Level 3
+// ***Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
+//!! YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+
+let year1 =
+  new Date().getFullYear() < 10
+    ? `0${new Date().getFullYear()}`
+    : new Date().getFullYear();
+let months1 =
+  new Date().getMonth() + 1 < 10
+    ? `0${new Date().getMonth() + 1}`
+    : new Date().getMonth() + 1;
+let days_1 =
+  new Date().getDate() < 10 ? `0${new Date().getDate()}` : new Date().getDate();
+let hours_1 =
+  new Date().getHours() < 10
+    ? `0${new Date().getHours()}`
+    : new Date().getHours();
+let minutes_1 =
+  new Date().getMinutes() < 10
+    ? `0${new Date().getMinutes()}`
+    : new Date().getMinutes();
+    
+
+console.log(`${year1}-${months1}-${days_1} ${hours_1}:${minutes_1}`)
 
