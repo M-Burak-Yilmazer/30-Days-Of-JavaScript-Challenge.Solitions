@@ -45,25 +45,44 @@ console.log(
   itComp[(itComp.length - 1) / 2],
   itComp[itComp.length - 1]
 );
-console.log(itComp.join(" ").toUpperCase())
-console.log(itComp.join(", ") +" are big IT companies.");
-console.log(itComp.includes("Google"))
-let result = itComp.indexOf("facebook")
-result != -1 ? console.log("facebook arraydedir"):console.log("facebook arrayda değildir")
-console.log(itComp.sort())
-console.log(itComp.reverse())
-console.log(itComp)
-console.log(itComp.slice(0,3))
-console.log(itComp)
-console.log(itComp.slice(itComp.length-3,itComp.length))
-console.log(itComp.slice((itComp.length - 1) / 2, (itComp.length - 1) / 2+1));
-console.log(itComp.shift())
-console.log(itComp)
-console.log(itComp.splice(Math.floor((itComp.length-1)/2),1))
-console.log(itComp)
-console.log(itComp.pop())
-console.log(itComp.splice(0,itComp.length))
-console.log(itComp)
+console.log(itComp.join(" ").toUpperCase());
+console.log(itComp.join(", ") + " are big IT companies.");
+console.log(itComp.includes("Google"));
+let result = itComp.indexOf("facebook");
+result != -1
+  ? console.log("facebook arraydedir")
+  : console.log("facebook arrayda değildir");
+console.log(itComp.sort());
+console.log(itComp.reverse());
+console.log(itComp);
+console.log(itComp.slice(0, 3));
+console.log(itComp);
+console.log(itComp.slice(itComp.length - 3, itComp.length));
+console.log(itComp.slice((itComp.length - 1) / 2, (itComp.length - 1) / 2 + 1));
+console.log(itComp.shift());
+console.log(itComp);
+console.log(itComp.splice(Math.floor((itComp.length - 1) / 2), 1));
+console.log(itComp);
+console.log(itComp.pop());
+console.log(itComp.splice(0, itComp.length));
+console.log(itComp);
 
-// console.log(itComp.splice((itComp.length - 1) / 2),1);
-// console.log(itComp
+let text =
+  "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.";
+
+text = text.replaceAll(",", "").replaceAll(".", "").split(" ");
+console.log(text);
+console.log(text.length);
+
+const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
+shoppingCart.unshift("Meat");
+console.log(shoppingCart);
+if (!shoppingCart.includes("Sugar")) {
+  shoppingCart.push("Sugar");
+}
+console.log(shoppingCart);
+let honey = shoppingCart.indexOf("Honey")
+console.log(honey)
+shoppingCart.splice(honey,honey+1)
+
+console.log(shoppingCart);
