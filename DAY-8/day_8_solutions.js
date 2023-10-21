@@ -88,6 +88,8 @@ const users = {
 // console.log(Object.values(Object.values(users)[0])[1].length);
 // console.log(Object.values(Object.values(users)).length )
 // console.log(Object.keys(users)[0])
+
+//!1
 let max = 0;
 let tutucu = 0;
 
@@ -97,5 +99,38 @@ for (let i = 0; i < Object.values(Object.values(users)).length; i++) {
     tutucu = i;
   }
 }
-7;
-console.log(Object.keys(users)[tutucu]);
+//   }
+// }
+// 7;
+// console.log(Object.keys(users)[tutucu]);
+
+// console.log(
+//   Object.values(Object.values(users)[0])[
+//     Object.keys(Object.values(users)[0]).indexOf("isLoggedIn")
+//   ]
+// );
+//*2
+let len = Object.values(Object.values(users)).length;
+let countTrues = 0;
+let countPoints = 0;
+// console.log(len)
+for (let i = 0; i < len; i++) {
+  if (
+    Object.values(Object.values(users)[i])[
+      Object.keys(Object.values(users)[i]).indexOf("isLoggedIn")
+    ] == true
+  )
+    countTrues++;
+
+  if (
+    Object.values(Object.values(users)[i])[
+      Object.keys(Object.values(users)[i]).indexOf("points")
+    ] >= 50
+  )
+    countPoints++;
+}
+console.log(countTrues, countPoints);
+
+
+let arr = [1,2,[1,3],3,4]
+console.log(arr.includes(1,3))
