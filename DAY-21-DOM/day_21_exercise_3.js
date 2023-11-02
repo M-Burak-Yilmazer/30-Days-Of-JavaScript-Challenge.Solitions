@@ -20,7 +20,15 @@ const getTime = () => {
 setInterval(getTime, 1000);
 
 const under = document.querySelector("#underline")
-under.style.
+under.style.textDecoration = "underline"
+
+document.querySelector(".done").style.backgroundColor = "#5BBC7A";
+document.querySelector(".ongoing").style.backgroundColor = "#F7DC5C";
+document
+  .querySelectorAll(".coming")
+  .forEach((item) => (item.style.backgroundColor = "#EB695B"));
+document.querySelectorAll("li").forEach(item=> item.style.padding="8px" )
+document.querySelectorAll("li").forEach((item) => (item.style.margin = "5px"));
 // const color = ["a", "b", "c", "d", "e", "f"];
 // let renk = "#";
 // for (let i = 0; i < color.length; i++) {
