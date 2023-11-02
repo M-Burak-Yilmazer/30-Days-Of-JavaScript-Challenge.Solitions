@@ -1,22 +1,90 @@
 // const inputNumber = document.querySelector("#generator");
-const numberInputValue = document.getElementById("inputId");
-console.log(numberInputValue.value);
-
-
+const numberInputValue = document.getElementById("generator");
 
 const button = document.querySelector("#btn");
 const result = document.querySelector("#result");
+console.log(numberInputValue);
+span = document.createElement("div");
 
 
-numberInputValue.addEventListener("change", (e) => {
+
+
+
+// numberInputValue.addEventListener("change", (e) => {
+//   let numbersArray = [];
+//   let inputNumber = e.target.value;
+
+//   for (let i = 0; i < inputNumber; i++) {
+//     numbersArray.push(i);
+//   }
+//   let span;
+//   for (let i = 0; i < numbersArray.length; i++) {
+//     span = document.createElement("div");
+//     span.innerHTML = `${numbersArray[i]}`;
+//     span.style.width = "40px";
+//     span.style.height = "40px";
+//     span.style.margin = "2px";
+//     span.style.color = "black";
+//     span.className = "span";
+//     if (!(numbersArray[i] % 2)) {
+//       span.style.backgroundColor = "yellow";
+//     } else {
+//       span.style.backgroundColor = "red";
+//     }
+
+//     for (let k = 2; k < numbersArray[i]; k++) {
+//       if (numbersArray[i] % k != 0) {
+//         span.style.backgroundColor = "green";
+//       }
+//     }
+
+//     result.appendChild(span);
+//   }
+// });
+
+numberInputValue.addEventListener("input", (e) => {
   let numbersArray = [];
-let inputNumber = e.target.value
+  let inputNumber = e.target.value;
 
   for (let i = 0; i < inputNumber; i++) {
     numbersArray.push(i);
   }
-  console.log(numbersArray);
+  let span;
+  for (let i = 0; i < numbersArray.length; i++) {
+    span = document.createElement("div");
+    span.innerHTML = `${numbersArray[i]}`;
+    span.style.width = "40px";
+    span.style.height = "40px";
+    span.style.margin = "1px";
+    span.style.color = "white";
+    span.className = "span";
+    if (!(numbersArray[i] % 2)) {
+      span.style.backgroundColor = "#F2BF27";
+    } else {
+      span.style.backgroundColor = "#F21616";
+    }
+
+    let isPrime = true;
+    for (let k = 2; k < numbersArray[i]; k++) {
+      if (numbersArray[i] % k == 0) {
+        isPrime = false;
+        break;
+      }
+    }
+    if (isPrime && numbersArray[i] > 1) {
+      span.style.backgroundColor = "#6524BF";
+    }
+
+    result.appendChild(span);
+  }
 });
+
+
+numberInputValue.onclick = function(){
+    numberInputValue.value=""
+   result.innerHTML=""
+}
+
 
 // let numbersArray = [];
 // for (let i = 0; i < inputNumber; i++) {

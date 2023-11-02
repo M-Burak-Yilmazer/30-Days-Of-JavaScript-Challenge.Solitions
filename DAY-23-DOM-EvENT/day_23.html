@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body style="text-align: center">
     <header>
+
       <h1>Number Generator</h1>
       <h5>30DaysOfJavaScript: DOM Day 3</h5>
+      <h5><span style="color:#F21616">Odd Numbers </span><span style="color:#F2BF27">Even Numbers </span><span style="color:#6524BF"> and Prime Numbers</span> </h6>
     </header>
 
     <form class="inputArea" action="">
-      <input type="text" value="" name="number" id="generator" />
-      <input id="btn" type="button" value="Generate Numbers">
+      <input style="outline: none; border: none; border-bottom: 1px solid brown; border-radius: 3px;" type="text" value="" name="number" id="generator" />
+      <input id="btn" type="button" value="Generate Numbers" style="background-color: azure;  cursor:pointer; border:none; box-shadow: 1px 1px 1px white;border-radius:3px" />
     </form>
     <div id="result"></div>
     <script src="./day_23_solutions.js"></script>
