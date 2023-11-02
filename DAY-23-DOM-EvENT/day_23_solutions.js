@@ -6,10 +6,6 @@ const result = document.querySelector("#result");
 console.log(numberInputValue);
 span = document.createElement("div");
 
-
-
-
-
 // numberInputValue.addEventListener("change", (e) => {
 //   let numbersArray = [];
 //   let inputNumber = e.target.value;
@@ -42,9 +38,9 @@ span = document.createElement("div");
 //   }
 // });
 
-numberInputValue.addEventListener("input", (e) => {
+button.addEventListener("click", (e) => {
   let numbersArray = [];
-  let inputNumber = e.target.value;
+  let inputNumber = numberInputValue.value;
 
   for (let i = 0; i < inputNumber; i++) {
     numbersArray.push(i);
@@ -76,15 +72,21 @@ numberInputValue.addEventListener("input", (e) => {
     }
 
     result.appendChild(span);
+    numberInputValue.value = "";
+    numberInputValue.focus();
   }
 });
 
+numberInputValue.addEventListener("keydown", (event) => {
+  if (event.keyCode === 13) {
+    button.click();
+  }
+});
 
-numberInputValue.onclick = function(){
-    numberInputValue.value=""
-   result.innerHTML=""
-}
-
+numberInputValue.onclick = function () {
+  numberInputValue.value = "";
+  result.innerHTML = "";
+};
 
 // let numbersArray = [];
 // for (let i = 0; i < inputNumber; i++) {
